@@ -18,8 +18,8 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     Client.cc \
     Cluster.cc \
-    Package.cc \
     Server.cc \
+    Settings.cc \
     simulNet.cc \
     simulRaft.cc
 
@@ -28,6 +28,7 @@ HEADERS += \
     Cluster.hh \
     Package.hh \
     Server.hh \
+    Settings.hh \
     simulNet.hh
 
 # Default rules for deployment.
