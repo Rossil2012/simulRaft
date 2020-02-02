@@ -2,7 +2,7 @@
 A Stand-alone Simulation of RAFT Cluster with Qt C++
 
 ## Overview
-All the servers are running in different threads, using a responsive mode so that you can running more servers(If you want the UI to work, no more than 50. Also you can modify the code to close the UI and observe the work flow through qDebug()'s report. The qDebug()'s report uses two macro switches defined in Settings.hh.) when consuming less resources. Servers can crash and recover.
+All the servers are running in different threads, using a responsive mode so that you can running more servers(If you want the UI to work, no more than 50. If you want to run more servers, you can modify the code to close the UI and observe the work flow through qDebug()'s report. The qDebug()'s report uses two macro switches defined in Settings.hh.) when consuming less resources. Servers can crash and recover.
 
 The class Server is implemented basically as the Raft paper recommends, but given the simulation of network, class simulNet, cannot perfectly simulate the actual network, I made some subtle modifications. The Client interacts with the cluster to append entries and to attain the real-time information at a fixed interval (1000ms).
 
